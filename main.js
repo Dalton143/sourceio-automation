@@ -4,7 +4,7 @@ let config, vars, app, loops, gui;
 // eslint-disable-next-line prefer-const
 config = {
 	// the message you send to others when you hack them
-	message: "papa bless, it's everyday bro /r/javascript",
+	message: "You have been hacked /r/javascript",
 	autoTarget: true,
 	autoAttack: true,
 	// the base64 database url
@@ -123,7 +123,7 @@ app = {
 	},
 
 	restart: () => {
-		app.stop();
+		app.start();
 		log(". Waiting for restart...");
 		setTimeout(() => {
 			log(". Restarting!");
